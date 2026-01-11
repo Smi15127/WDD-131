@@ -1,0 +1,43 @@
+#top {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#top h1{
+    font-size: 75px;
+}
+
+#top p {
+    margin-top: 25px;
+    font-size: 30px;
+    color: blue;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#content {
+    margin-top: 75px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#content p {
+    text-align: left;
+    margin: 25px 275px;
+    line-height: 1.5;
+}
+
+.list {
+    list-style: decimal;
+    max-width: 600px;
+    margin: 25px auto;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#logo {
+    margin-top: 75px;
+}
