@@ -5,7 +5,14 @@ body {
   font-family: Roboto, sans-serif;
 }
 header,
-main,
+main {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  padding: 1rem;
+  flex:1;
+}
 footer {
   max-width: 1000px;
   margin: 1rem auto;
@@ -19,7 +26,6 @@ h1 {
 section {
   padding: 20px;
   background-color: white;
-  margin: 1em;
   border: 1px solid #ccc;
 }
 nav a {
@@ -66,18 +72,16 @@ nav {
     display: block;
   }
 
-  nav {
+ nav {
     flex-direction: row;
     justify-content: space-around;
   }
-
   main {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     gap: 1rem;
   }
 
   section {
-    flex: 1 1 30%;
+    flex: 1;
   }
 }
