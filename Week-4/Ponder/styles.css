@@ -62,15 +62,6 @@ nav {
 .menu-btn {
   display: block;
 }
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
-}
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
-}
-          
 @media screen and (min-width: 700px) {
 
   .menu-btn {
@@ -80,9 +71,7 @@ nav {
   nav a {
     display: block;
   }
-  nav.open a {
-  display: block;
-  }
+
  nav {
     flex-direction: row;
     justify-content: space-around;
