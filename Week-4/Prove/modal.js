@@ -1,3 +1,12 @@
+// Mobile Menu
+const menuLabel = document.querySelector('.menu-label');
+const navLinks = document.querySelector('.nav-links');
+
+menuLabel.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
+
+// Modal
 const gallery = document.querySelector('.gallery');
 const modal = document.querySelector('dialog');
 const modalImage = modal.querySelector('img');
