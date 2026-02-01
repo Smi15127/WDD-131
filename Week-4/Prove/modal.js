@@ -31,4 +31,12 @@ modal.addEventListener('click', (event) => {
         modal.close();
     }
 });
+
+// Close modal if pressing the esc key
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        modal.close();
+    }
+});
+
        
