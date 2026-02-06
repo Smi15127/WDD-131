@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Movies</title>
 </head>
 <header>
     <h1>Flick Picks</h1>
-    <nav>
+    <nav aria-label="Primary Navigation">
       <ul class="main-nav">
-        <li><a href="#">Home</a></li>
+        <li><a href="#" aria-current="Page">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -19,22 +19,22 @@
 <body>
   <main id="main-content" role="main">
   <section id="movie-list" aria-label="Movie Reviews">
-    <article class="movie">
+    <article class="movie" aria-labelledby="Spiderverse-title">
       <h2>Spider-Man: Into the Spider-Verse</h2>
       <img src="https://wddbyui.github.io/wdd131/images/spiderman.png" alt="Miles Morales swinging through the city">
       <p class="RD"><strong>Release Date:</strong> Dec 14, 2018</p>
       <p class="RA"><strong>Recommended Age:</strong> 10+</p>
       <p class="Genre"><strong>Genre:</strong> Action/Adventure</p>
-      <p class="rating"><strong>Rating:</strong> <span>⭐⭐⭐⭐⭐</span></p>
+      <p class="rating" aria-label="Rating: five out of five stars"><strong>Rating:</strong> <span>⭐⭐⭐⭐⭐</span></p>
       <p id='desc'>Miles Morales becomes the Spider-Man of his reality and crosses paths with others from the multiverse.</p>
     </article>
-    <article class="movie">
+    <article class="movie" aria-labelledby="Title - The Other Side of Heaven">
       <h2>The Other Side of Heaven</h2>
       <img src="https://wddbyui.github.io/wdd131/images/heaven.png" alt="A young couple and missionaries in a row boat on the ocean">
       <p><strong>Release Date:</strong> December 14, 2001</p>
       <p><strong>Recommended Age:</strong> 10+</p>
       <p><strong>Genre:</strong> Drama/Religious</p>
-      <p><strong>Rating:</strong> <span>⭐⭐⭐⭐</span></p>
+      <p aria-label="Rating: four out of five stars"><strong>Rating:</strong> <span aria-hidden="true">⭐⭐⭐⭐</span></p>
       <p id='desc'>Based on the true story of Elder John H. Groberg, a missionary in Tonga in the 1950s, this film tells a powerful story of faith, hardship, and miracles.</p>
     </article>
   </section>
