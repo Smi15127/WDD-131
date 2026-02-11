@@ -50,6 +50,7 @@ gradeSelect.addEventListener('change', function () {
 function displayStudent() {
     const student = students[currentIndex];
     studentNameElement.textContent = `Student: ${student.first} ${student.last}`;
+    statusMessage.textContent = '';
 }
 
 function convert(grade) {

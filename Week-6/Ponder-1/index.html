@@ -6,24 +6,25 @@
     <title>Arrays Practice</title>
 </head>
 <body>
+    <main>
+        <h1>Data</h1>
 
-    <h1>Data</h1>
+        <p id="student-name"></p>
 
-    <p id="student-name"></p>
+        <p class="grade-query">Please select a grade:</p>
+        <label for="grade-select">Grade:</label>
+        <select name="grade" id="grade-select">
+            <option>Choose One:</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+            <option value="d">D</option>
+            <option value="f">F</option>
+        </select>
 
-    <p class="grade-query">Please select a grade:</p>
-    <label for="grade-select">Grade:</label>
-    <select name="grade" id="grade-select">
-        <option>Choose One:</option>
-        <option value="a">A</option>
-        <option value="b">B</option>
-        <option value="c">C</option>
-        <option value="d">D</option>
-        <option value="f">F</option>
-    </select>
+        <p id="status-message" role="status" aria-live="polite"></p>
 
-    <p id="status-message"></p>
-
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
