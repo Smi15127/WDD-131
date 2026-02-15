@@ -6,115 +6,117 @@ body {
     line-height: 1.6;
 }
 header, footer {
-    background-color: #222;
-    color: white;
+    background-color: white;
+    color: #222;
     padding: 1rem;
     text-align: center;
 }
 .main-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
     list-style: none;
     padding: 0;
 }
 .main-nav li {
-    padding: 8px;
+    padding: 0;
 }
 .main-nav a {
     color: #ffc107;
     text-decoration: none;
+    padding: 8px;
 }
-#movie-list {
+#book-list {
     padding: 0 2rem;
 }
-.movie {
-    border: 2px solid #ccc;
+.book {
     padding: 1rem;
     border-radius: 10px;
-    max-width: 700px;
     margin: 20px auto;
 }
-.movie h2 {
+.book h2 {
     color: #b30059;
     font-size: 1.5rem;
     text-align: center;
     margin: 20px;
 }
-.movie p {
+.book p {
     padding-left: 20px;
 }
-.movie img {
+.book img {
     max-width: 100%;
     display: block;
     border-radius: 8px;
     margin: 0 auto;
 }
-.movie h2 {
-    grid-area: movie-title;
+.book h2 {
+    grid-area: book-title;
 }
-.movie img{
-    grid-area: movie-poster;
+.book img{
+    grid-area: book-poster;
 }
-.RD{
-    grid-area: movie-date;
+.date{
+    grid-area: book-date;
 }
-.RA{
-    grid-area: movie-age;
+.ages{
+    grid-area: book-age;
 }
-.Genre{
-    grid-area: movie-genre;
+.genre{
+    grid-area: book-genre;
 }
-.Rating{
-    grid-area: movie-rating;
-}
-#desc{
-    grid-area: movie-desc;
-}
-.movie{
-    display: grid;
-    grid-template-areas: 
-    'movie-title'
-    'movie-poster'
-    'movie-date'
-    'movie-age'
-    'movie-genre'
-    'movie-rating'
-    'movie-desc';
-    grid-gap: 5px;
-
-}
-
-@media screen and (min-width: 600px) {
-.movie h2 {
-    grid-area: movie-title;
-}
-.movie img{
-    grid-area: movie-poster;
-}
-.RD{
-    grid-area: movie-date;
-}
-.RA{
-    grid-area: movie-age;
-}
-.Genre{
-    grid-area: movie-genre;
-}
-.Rating{
-    grid-area: movie-rating;
+.rating{
+    grid-area: book-rating;
 }
 #desc{
-    grid-area: movie-desc;
+    grid-area: book-desc;
 }
-.movie{
-    display: grid;
-    grid-template-areas: 
-    'movie-poster movie-title'
-    'movie-poster movie-date'
-    'movie-poster movie-age'
-    'movie-poster movie-genre'
-    'movie-poster movie-rating'
-    'movie-desc movie-desc';
-    grid-gap: 5px;
+.book {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    'book-date book-title'
+    'book-age book-poster'
+    'book-genre book-poster'
+    'book-rating book-poster'
+    '. book-poster'
+    '. book-desc';
+  gap: 5px;
+}
 
+@media screen and (max-width: 600px) {
+.book h2 {
+    grid-area: book-title;
 }
+.book img{
+    grid-area: book-poster;
 }
-          
+.date{
+    grid-area: book-date;
+}
+.ages{
+    grid-area: book-age;
+}
+.genre{
+    grid-area: book-genre;
+}
+.rating{
+    grid-area: book-rating;
+}
+#desc{
+    grid-area: book-desc;
+}
+
+.book{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    '. book-date'
+    '. book-age'
+    '. book-genre'
+    '. book-rating'
+    'book-title .'
+    'book-poster .'
+    'book-desc .';
+    grid-gap: 5px;
+}
+}      
