@@ -1,0 +1,145 @@
+/* Page */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.card-container {
+    position: relative;
+    width: 520px;
+    height: 320px;
+}
+
+/* =========================
+   BACK CARD
+========================= */
+
+.card-back {
+    position: absolute;
+    width: 420px;
+    height: 220px;
+    background: #cfcfcf;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.25);
+    top: 80px;
+    left: 100px;
+
+    /* THIS makes children position correctly inside */
+    position: absolute;
+}
+
+/* Make stripe INSIDE the back card */
+.stripe {
+    position: absolute;
+    width: 420px;
+    height: 50px;
+    background: #111;
+    top: 20px;
+    left: 100px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* CV section */
+.cv-field {
+    position: absolute;
+    top: 155px;
+    left: 360px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cv-field label {
+    margin-bottom: 5px;
+}
+
+.cv-field input {
+    width: 70px;
+    padding: 6px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+
+/* =========================
+   FRONT CARD
+========================= */
+
+.card-front {
+    position: absolute;
+    width: 420px;
+    height: 220px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 8px 14px rgba(0,0,0,0.3);
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* Moved up and left */
+    top: 145px;
+    left: 350px;
+
+    z-index: 2;
+}
+
+/* Labels */
+.card-front label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Inputs */
+.card-front input {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background: #f4f4f4;
+    box-sizing: border-box;
+}
+
+/* Expiration layout */
+#cardExpiration {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#cardExpiration input {
+    width: 60px;
+}
+
+/* Button */
+button {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    padding: 8px 20px;
+    background: #e0e0e0;
+    border: 1px solid #666;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: #d5d5d5;
+}
+
+/* Message */
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}

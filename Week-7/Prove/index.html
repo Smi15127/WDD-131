@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Card Validation Prove</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- Back of credit card-->
+    <div class="card-container">
+        <div class="card-back"></div>
+        <div class="stripe"></div>
+        <div class="cv-field">
+            <label for="cv">CV</label>
+            <input type="text" id="cv" maxlength="3" placeholder="123">
+        </div>
+    </div>
+
+    <!-- Front of credit card -->
+     <div class="card-front">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" maxlength="16" placeholder="1234123412341234">
+
+        <label for="cardHolder">Card Holder</label>
+        <input type="text" id="cardHolder" placeholder="John Doe">
+
+        <div id="cardExpiration">
+            <label for="expirationDate">EXPIRATION</label>
+            <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+            <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+        </div>
+
+        <button id="validateBtn">Validate Card</button>
+        <div id="message" class="message"></div>
+    </div>
+<script src="program.js"></script>
 </body>
 </html>
