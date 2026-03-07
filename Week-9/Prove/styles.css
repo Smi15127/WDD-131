@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    text-align:center;
+    margin:0;
+    padding:20px;
+}
+
+/* Header */
+
+#title-image{
+    width:80px;
+    vertical-align:middle;
+}
+
+#title{
+    display:inline-block;
+    font-size:28px;
+    margin-left:10px;
+}
+
+/* Search bar */
+
+form{
+    margin:20px auto;
+    max-width:500px;
+    display:flex;
+    border:1px solid #aaa;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+input[type="search"]{
+    flex:1;
+    border:none;
+    padding:10px;
+}
+
+button{
+    border:none;
+    background:white;
+    cursor:pointer;
+}
+
+#search-icon{
+    width:18px;
+    padding:5px;
+}
+
+/* Recipe card */
+
+.recipe-card{
+    border:1px solid #aaa;
+    border-radius:6px;
+    padding:15px;
+    max-width:500px;
+    margin:20px auto;
+}
+
+#applecrisppic{
+    width:100%;
+    border-radius:4px;
+}
+
+/* Recipe info */
+
+.recipe-info{
+    text-align:left;
+    margin-top:10px;
+}
+
+#desserts{
+    background:#eee;
+    border:1px solid #aaa;
+    padding:4px 8px;
+    font-size:12px;
+    margin-bottom:5px;
+}
+
+#appleCrisp{
+    color:#2a7bd6;
+    margin:5px 0;
+}
+
+.rating{
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    margin-top:20px;
+}
+
+.social{
+    margin-top:10px;
+}
+
+.social img{
+    width:24px;
+    margin:0 5px;
+}
+
+/* Larger screen layout */
+
+@media screen and (min-width:600px){
+
+.recipe-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    max-width:800px;
+}
+
+#applecrisppic{
+    width:300px;
+}
+
+.recipe-info{
+    flex:1;
+}
+
+}
