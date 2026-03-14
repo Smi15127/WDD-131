@@ -22,16 +22,16 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <img id="title-image" src="images/images/recipe-book.png" alt="Recipe book image">
+    <img id="title-image" src="images/recipe-book.png" alt="Recipe book image">
     <h3 id="title">RecipeBook</h3>
-    <form action="/search" method="get">
-        <input type="search" name="query" placeholder="Find a recipe">
-        <button type="submit" aria-label="Search">
-            <img id="search-icon" src="images/images/search.svg" alt="Search magnifying-glass">
-        </button>
+    <form id="search-form">
+        <input type="search" id="search-input" placeholder="Find a recipe">
+            <button type="submit" aria-label="Search">
+                <img id="search-icon" src="images/search.svg" alt="Search magnifying-glass">
+            </button>
     </form>
     <div class="recipe-card">
-    <img id="applecrisppic" src="images/images/apple-crisp.jpg" alt="Apple Crisp Image">
+    <img id="applecrisppic" src="images/apple-crisp.jpg" alt="Apple Crisp Image">
 
         <div class="recipe-info">
             <button id="desserts">dessert</button>
@@ -47,15 +47,19 @@
         </div>
     </div>
 
+    <div id="results"></div>
+
 <footer>   
     <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
     <div class="social">
         <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-        <a href="#"><img src="images/images/instagram_icon.svg" alt="instagram icon"></a>
-        <a href="#"><img src="images/images/youtube_icon.svg" alt="youtube icon"></a>
-        <a href="#"><img src="images/images/pinterest_icon.svg" alt="pinterest icon"></a>
+        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
     </div>                  
                 
 </footer>
+
+<script src="program.js"></script>
 </body>
 </html>

@@ -51,76 +51,96 @@ button{
 }
 
 /* Recipe card */
-
-.recipe-card{
-    border:1px solid #aaa;
-    border-radius:6px;
-    padding:15px;
-    max-width:500px;
-    margin:20px auto;
+.recipe-card {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    padding: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+    overflow: hidden; /* Ensures content stays inside card */
+    text-align: left;
 }
 
-#applecrisppic{
-    width:100%;
-    border-radius:4px;
+/* Recipe card images only */
+.recipe-card img {
+    width: 100%;
+    max-width: 100%; /* prevents oversizing */
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+    height: auto; /* maintain aspect ratio */
 }
 
 /* Recipe info */
-
-.recipe-info{
-    text-align:left;
-    margin-top:10px;
+.recipe-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-#desserts{
-    background:#eee;
-    border:1px solid #aaa;
-    padding:4px 8px;
-    font-size:12px;
-    margin-bottom:5px;
+.recipe-info button {
+    background: #eee;
+    border: 1px solid #aaa;
+    padding: 4px 8px;
+    font-size: 12px;
+    width: fit-content;
 }
 
-#appleCrisp{
-    color:#2a7bd6;
-    margin:5px 0;
+.recipe-info h3 {
+    color: #2a7bd6;
+    margin: 5px 0;
+    word-break: break-word; /* Ensure long names wrap */
 }
 
-.rating{
-    font-size:18px;
+.recipe-info p {
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+.rating {
+    font-size: 18px;
+}
+
+/* Results container spacing */
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* Footer */
-
-footer{
-    margin-top:20px;
+footer {
+    margin-top: 20px;
+    text-align: center;
 }
 
-.social{
-    margin-top:10px;
+/* Footer social icons */
+.social {
+    margin-top: 10px;
 }
 
-.social img{
-    width:24px;
-    margin:0 5px;
+.social img {
+    width: 24px;       /* fixed small size */
+    height: 24px;      /* maintain aspect ratio */
+    margin: 0 5px;
+    object-fit: contain; /* prevent stretching */
 }
 
-/* Larger screen layout */
+/* Larger screens layout */
+@media screen and (min-width: 600px) {
+    .recipe-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        max-width: 800px;
+    }
 
-@media screen and (min-width:600px){
+    .recipe-card img {
+        width: 300px;
+        height: auto;
+    }
 
-.recipe-card{
-    display:flex;
-    align-items:center;
-    gap:20px;
-    max-width:800px;
-}
-
-#applecrisppic{
-    width:300px;
-}
-
-.recipe-info{
-    flex:1;
-}
-
+    .recipe-info {
+        flex: 1;
+    }
 }
